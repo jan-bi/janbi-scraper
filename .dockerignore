@@ -1,2 +1,10 @@
 node_modules
 *.log
+.git
+.gitignore
+.env
+.vscode
+*.md
+*.lock
+husky/
+README.md
