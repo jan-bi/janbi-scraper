@@ -11,6 +11,7 @@ app.get("/", (_, res) => {
   res.send("Scraper server is running");
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Scraper server listening on port ${process.env.PORT}`);
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Scraper server listening on port ${PORT}`);
 });
