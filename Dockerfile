@@ -6,4 +6,4 @@ RUN npx playwright install-deps
 COPY . .
 RUN npx playwright install chromium
 EXPOSE 3001
-CMD ["npm", "start"]
+CMD ["node", "./src/app.js"]
