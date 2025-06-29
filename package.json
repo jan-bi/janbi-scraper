@@ -8,7 +8,6 @@
   "scripts": {
     "start": "node ./src/app.js",
     "dev": "nodemon ./src/app.js",
-    "postinstall": "npx playwright install",
     "lint": "eslint .",
     "format": "prettier --cache --write ."
   },
