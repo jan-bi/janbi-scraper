@@ -1,6 +1,7 @@
 import "dotenv/config.js";
 import express from "express";
 import scrapeRouter from "./routes/scrape.js";
+import httpStatusCode from "./utils/httpStatusCode.js";
 
 const app = express();
 
@@ -8,7 +9,7 @@ app.use(express.json());
 app.use("/scrape", scrapeRouter);
 
 app.get("/", (_, res) => {
-  res.send("Scraper server is running");
+  res.status(httpStatusCode.OK).send("Scraper server is running");
 });
 
 const PORT = process.env.PORT || 3001;
