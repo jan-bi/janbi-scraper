@@ -12,7 +12,7 @@ app.get("/", (_, res) => {
   res.status(httpStatusCode.OK).send("Scraper server is running");
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Scraper server listening on port ${PORT}`);
 });
